@@ -40,6 +40,7 @@ string LZ77(string input, int option, string path, string dir_res);
 
 int main()
 {
+	system("chcp 1251");
 	setlocale(LC_ALL, "Russian");
 
 
