@@ -11,5 +11,5 @@ void lz77_Compression_1();
 void lz77_Compression_2();
 void lz77_Decoder();
 bool GetFileToArray(std::string FileName, std::vector<std::string>& VectorOfSting);
-void LZ77(int option, int path, std::string dir_res);
+void LZ77(std::string dir_res);
 int bufferSize();

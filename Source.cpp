@@ -109,7 +109,7 @@ void lz77_Compression_1() {
 	std::string dir_res = Dir[option - 1];
 
 	if (option > 0) {
-		LZ77(1, 1, dir_res);
+		LZ77(dir_res);
 	}
 	else
 	{
@@ -134,7 +134,7 @@ void lz77_Compression_2() {
 		lz77_Compression_2();
 	}
 	else {
-		LZ77(1, 1, Dir);
+		LZ77(Dir);
 	}
 }
 
@@ -155,7 +155,7 @@ void lz77_Decoder() {
 }
 
 // архиватор
-void LZ77(int option, int path, std::string dir_res)
+void LZ77(std::string dir_res)
 {
 	std::string result;
 
